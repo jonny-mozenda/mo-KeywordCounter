@@ -3,15 +3,13 @@ var fulltextCloud = document.body.innerText;
 // Start assembling row
 var row = {};
 
-//Get the full HTML for the word cloud into the row
-row["FullTextCloud"] = fulltextCloud;
-
 // Loop through and count keywords
 
 try {
     var fulltext = document.documentElement.innerHTML;
     var keywords = [
-        'Trump',
+      // Below is a list of the keywords that the javascript is going to parse through. Below, is an example of political candidates. Please delete these before running and fill with the keywords you are looking for.
+/*
         'Biden',
         'Pete',
         'Bloomberg',
@@ -19,6 +17,7 @@ try {
         'Warren',
         'Bernie',
         'Klobuchar'
+*/
     ];
 
     for (var i = 0; i < keywords.length; i++) {
